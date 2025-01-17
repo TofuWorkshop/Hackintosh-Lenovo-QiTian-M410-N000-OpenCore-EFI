@@ -1,3 +1,11 @@
+**将归档，已知但不计划解决的问题：**
+1. hdmi输出
+2. 睡眠唤醒
+
+~*(也不会还有人在用这么老的型号了吧……)*~
+
+---
+
 ***序列号那一页清空了，记得用工具生成好再去用***
 
 ---
@@ -34,13 +42,6 @@
 | CSM | Startup > CSM: Disabled                                                         |
 | CFG Lock | 使用工具 CFGLock 解锁                                                                 |
 
-###### 遇到的问题
-- 如何在OC界面使用Tools文件夹下的工具（诸如CFGLock、ControlMsrE2） ：按空格 
-  <small>*NOTE:0 如果尚未解锁cfg，则需要将 kernal>Quirks 中的 AppleCpuPmCfgLock和AppleXcpmCfgLock勾上*</small>
-- 卡EB（Err 0xE @ GV-bootSignature） ：通常是因为工具中的 Misc>Security 下的SecureBootModel没关 
-  <small>*NOTE: 想看到EB代码（而非一颗苹果图标）、需要开启 Misc>Debug 下的Apple Debug、启用日志记录、启用日志记录到文件（方便从ESP分区中提出来看）*</small>
-- 安装第一遍进度条 重启后看不到macos所在分区 ：UEFI>APFS 下MinDate和MinVersion都选择-1
-
 ###### USB端口号 ( USB2 / USB3 )
 > <small>
 > 不清楚同型号主板端口号是否一致 </br>
@@ -56,3 +57,5 @@
 | 后↙ | 8/-  | 后↙ | 9/-  | 
 |    |      | |      |
 | F-USB1 | -10- | F-USB2 | ?    |
+
+
